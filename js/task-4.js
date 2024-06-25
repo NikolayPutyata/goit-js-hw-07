@@ -10,11 +10,13 @@ function handlerFunction(event) {
 
   if (email === "" || password === "") {
     alert("All form fields must be filled in");
+  } else {
+    const userInformation = {
+      email,
+      password,
+    };
+    console.log(userInformation);
   }
-  const userInformation = {
-    email,
-    password,
-  };
-  console.log(userInformation);
+
   form.reset();
 }
